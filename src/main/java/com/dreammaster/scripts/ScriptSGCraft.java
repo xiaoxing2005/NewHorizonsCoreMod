@@ -4,6 +4,7 @@ import static gregtech.api.enums.Mods.BartWorks;
 import static gregtech.api.enums.Mods.EnderIO;
 import static gregtech.api.enums.Mods.GoodGenerator;
 import static gregtech.api.enums.Mods.GregTech;
+import static gregtech.api.enums.Mods.OpenComputers;
 import static gregtech.api.enums.Mods.SGCraft;
 import static gregtech.api.enums.Mods.TecTech;
 import static gregtech.api.util.GT_ModHandler.getModItem;
@@ -243,6 +244,28 @@ public class ScriptSGCraft implements IScriptLoader {
                 getModItem(GoodGenerator.ID, "compactFusionCoil", 1, 3, missing),
                 'e',
                 ItemList.Sensor_UXV.get(1L));
+        ExtremeCraftingManager.getInstance().addExtremeShapedOreRecipe(
+                getModItem(SGCraft.ID, "stargateController", 1, 0, missing),
+                "abcdef",
+                "---------",
+                "---------",
+                "--abbba--",
+                "--acdca--",
+                "--adeda--",
+                "--acdca--",
+                "--abbba--",
+                "---------",
+                "---------",
+                'a',
+                CustomItemList.StargateFramePart.get(1),
+                'b',
+                CustomItemList.StargateShieldingFoil.get(1),
+                'c',
+                getModItem(OpenComputers.ID, "ButtonGroup", 1, 0, missing),
+                'd',
+                getModItem(OpenComputers.ID, "NumPad", 1, 0, missing),
+                'e',
+                getModItem(SGCraft.ID, "ocInterface", 1, 0, missing));
 
     }
 }
