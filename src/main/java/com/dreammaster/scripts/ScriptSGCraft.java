@@ -246,7 +246,6 @@ public class ScriptSGCraft implements IScriptLoader {
                 ItemList.Sensor_UXV.get(1L));
         ExtremeCraftingManager.getInstance().addExtremeShapedOreRecipe(
                 getModItem(SGCraft.ID, "stargateController", 1, 0, missing),
-                "abcdef",
                 "---------",
                 "---------",
                 "--abbba--",
